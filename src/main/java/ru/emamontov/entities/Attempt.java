@@ -7,5 +7,5 @@ public class Attempt {
     private Date startTime;
     private Date endTime;
     private User applicant;
-    private int result;
+    private AttemptResult result;
 }
