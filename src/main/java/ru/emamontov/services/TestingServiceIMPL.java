@@ -6,17 +6,17 @@ import ru.emamontov.entities.Test;
 
 public class TestingServiceIMPL implements TestingService {
     @Override
-    public Attempt startTestCase(Test test) {
+    public Attempt startTest(Test test) {
         return null;
     }
 
     @Override
-    public Question getCurrentQuestion(Attempt attempt) {
+    public Question getQuestion(Attempt attempt) {
         return null;
     }
 
     @Override
-    public Question answerCurrentQuestion(Attempt attempt, int answer) {
+    public Question answerQuestion(Attempt attempt, int answer) {
         return null;
     }
 }

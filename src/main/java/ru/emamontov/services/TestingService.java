@@ -5,8 +5,8 @@ import ru.emamontov.entities.Question;
 import ru.emamontov.entities.Test;
 
 public interface TestingService {
-    Attempt startTestCase(Test test);
-    Question getCurrentQuestion(Attempt attempt);
-    Question answerCurrentQuestion(Attempt attempt, int answer);
+    Attempt startTest(Test test);
+    Question getQuestion(Attempt attempt);
+    Question answerQuestion(Attempt attempt, int answer);
 
 }
