@@ -6,19 +6,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/tests")
 public class TestingController {
-    @RequestMapping(value = "/start/{TestCaseId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{testId}", method = RequestMethod.POST)
     public String startTestCase(@PathVariable int TestCaseId){
         return null;
     }
 
-    @RequestMapping(value = "/{TestCaseId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{testId}", method = RequestMethod.GET)
     public String getCurrentQuestion(@PathVariable int TestCaseId){
         return null;
     }
 
-    @RequestMapping(value = "/{TestCaseId}/{AnswerNumber}", method = RequestMethod.POST)
+    @RequestMapping(value = "/{testId}/{AnswerNumber}", method = RequestMethod.POST)
     public String answerCurrentQuestion(@PathVariable int TestCaseId, int AnswerNumber){
         return null;
     }

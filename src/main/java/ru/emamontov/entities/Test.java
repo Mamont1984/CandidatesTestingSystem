@@ -3,8 +3,8 @@ package ru.emamontov.entities;
 import java.util.Date;
 import java.util.List;
 
-public class TestCase {
-    private TestCaseState currentState;
+public class Test {
+    private TestState currentState;
     private String testCaseName;
     private Date creationTime;
     private User author;

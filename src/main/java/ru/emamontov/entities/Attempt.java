@@ -3,7 +3,7 @@ package ru.emamontov.entities;
 import java.util.Date;
 
 public class Attempt {
-    private TestCase testCase;
+    private Test test;
     private Date startTime;
     private Date endTime;
     private User applicant;

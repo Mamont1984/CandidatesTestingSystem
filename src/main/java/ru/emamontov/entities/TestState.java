@@ -1,6 +1,6 @@
 package ru.emamontov.entities;
 
-public enum TestCaseState {
+public enum TestState {
     created,
     running,
     finished

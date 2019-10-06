@@ -2,11 +2,11 @@ package ru.emamontov.services;
 
 import ru.emamontov.entities.Attempt;
 import ru.emamontov.entities.Question;
-import ru.emamontov.entities.TestCase;
+import ru.emamontov.entities.Test;
 
 public class TestingServiceIMPL implements TestingService {
     @Override
-    public Attempt startTestCase(TestCase testCase) {
+    public Attempt startTestCase(Test test) {
         return null;
     }
 
