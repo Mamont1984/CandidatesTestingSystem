@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org">
+
+<body>
+
+<h2>Tests</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="test : ${selections}">
+        <td th:text="${test.name}"/>
+        <td th:text="${test.author.name}"/>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
