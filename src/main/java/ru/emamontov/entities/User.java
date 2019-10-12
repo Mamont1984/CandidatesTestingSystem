@@ -1,6 +1,6 @@
 package ru.emamontov.entities;
 
-public class User {
+public class User extends BaseEntity {
     private String name;
 
     public User(String name) {

@@ -2,7 +2,7 @@ package ru.emamontov.entities;
 
 import java.util.List;
 
-public class Test {
+public class Test extends BaseEntity {
     private String name;
     private User author;
     private List<Question> questions;

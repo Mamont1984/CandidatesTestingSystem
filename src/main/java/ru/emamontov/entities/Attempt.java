@@ -1,6 +1,6 @@
 package ru.emamontov.entities;
 
-public class Attempt {
+public class Attempt extends BaseEntity {
     private Test test;
     private User applicant;
     private int correctAnswers;
