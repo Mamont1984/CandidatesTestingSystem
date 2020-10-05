@@ -13,24 +13,24 @@ public class TestingController {
     TestingService testingService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String getTestsList(Model model){
+    public String getAvailableTests(Model model){
 
-        model.addAttribute("selections", testingService.getTestsList());
-        return "tests/testsList";
+        model.addAttribute("selections", testingService.getAllTests());
+        return "tests/all";
     }
 
     @RequestMapping(value = "/{testId}", method = RequestMethod.POST)
     public String startTest(@PathVariable int testId, Model model){
-        return null;
+        return null; //todo
     }
 
     @RequestMapping(value = "/{testId}/{questionId}", method = RequestMethod.GET)
     public String getQuestion(@PathVariable int testId, int questionId, Model model){
-        return null;
+        return null; //todo
     }
 
     @RequestMapping(value = "/{testId}/{questionId}", method = RequestMethod.POST)
     public String answerQuestion(@PathVariable int testId, int questionId, Model model){
-        return null;
+        return null; //todo
     }
 }

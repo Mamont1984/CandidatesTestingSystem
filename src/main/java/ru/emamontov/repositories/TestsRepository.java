@@ -1,9 +1,9 @@
 package ru.emamontov.repositories;
 
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import ru.emamontov.entities.Test;
 
-import java.util.List;
-
-public interface TestsRepository {
-    List<Test> getTestsList();
+@Repository
+public interface TestsRepository extends CrudRepository<Test, Long> {
 }

@@ -9,14 +9,14 @@
 <table>
     <thead>
     <tr>
+        <th>Id</th>
         <th>Name</th>
-        <th>Author</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="test : ${selections}">
+        <td th:text="${test.id}"/>
         <td th:text="${test.name}"/>
-        <td th:text="${test.author.name}"/>
     </tr>
     </tbody>
 </table>

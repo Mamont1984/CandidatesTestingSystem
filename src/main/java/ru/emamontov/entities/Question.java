@@ -1,7 +1,9 @@
 package ru.emamontov.entities;
 
-public class Question extends BaseEntity {
+import java.io.Serializable;
+
+public class Question implements Serializable {
+    private long id;
     private String question;
     private String[] answers;
-    private int points;
 }
